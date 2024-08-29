@@ -1,0 +1,123 @@
+<!--Resolution 1920x1080-->
+<!--Shooq Janahi 202001753, Nada Alawadhi 202100024, Rabab Abbas 202203500-->
+<html>
+    <head>
+        <title>Making of Extinct Animals</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body onload="DisplayName()">
+        
+        
+        <div id="Header">
+            <img src="images/logo.png" alt="Brontosaurus dinosaur logo">
+            <div id="showname"></div>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="DD_Function()">Extinct Animals</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="Brachiosaurus.html">Brachiosaurus</a>
+                        <a href="Mammoth.html">Mammoth</a>
+                        <a href="dodo.html">Dodo</a>
+                    </div>
+                </div> 
+                <a href="Making%20Of%20EA.html">Making of EA</a>
+                <a href="Our%20Story.html">Our Story</a>
+            </div>
+        </div>  
+       
+<!-- Shooq's code start here -->
+        <div id ="outer-container">   <!--div for all-->
+            
+            <div id="sidebar"></div>
+            
+            <div id="content"><!-- content of sub topic-->
+                
+                <div id="subtitle">Making Of EA</div><!--page title-->
+                <p>
+                    We chose a topic related to something old, which it’s about extinct animals, for that we preferred to choose colors related to the same field. The colors of the whole website was chosen based on the image which contains a skeleton of one of the extinct animals, we took out the colors with the help of one website. When we uploaded that image there, the website took out all the colors from it. We used that image itself to be a background of the “Register Your Interest” form that was placed at the end of the home page.
+                
+                </p>
+                <!---------------------------------------- the logo ------------------------------------------>
+                <img class="vertical_img right_img" src="images/logo.png" alt="Brontosaurus dinosaur logo">
+                
+                <p>
+                     In choosing the logo we wanted something that would represent the page in a better way therefore after reviewing a set of different designs and testing elements we were able to design the best logo that will represent our page in the best way possible and that was the Brontosaurus dinosaur design, the software used for designing the logo is Canva. The best area to place the logo is on the top left corner of the website, according to our experience while visiting some websites.
+                </p>
+                
+                <img class="horizontal_img left_img" src="images/Home%20Page%20layout.png">
+                
+                <p>
+                    The header contains the navigation bar which links to the home page, Extinct Animals subtopics, making of EA and Our story. Extinct Animals subtopics are placed on a drop down list to be able to choose the topic he wants to read about from the list. We decided to place the navigation bar to the right in order to leave a white space between the logo and between it, to let the user focus on both. We did that by using CSS position property. When the user scrolls down the page, he will also be able to see the header, to ease of using the website and ease of navigation from one page to another. This is done by using CSS position property and sticky attribute.
+                </p>
+
+                <p>
+                    The body of the home page starts with a slideshow where the user can get an overview of the website. The slideshow does not only contain images but also a title and a description. The slideshow added to the home page in order to attract the users of our website. The images will be changed automatically, this property has been done by using javascript. The script is also placed in a separate file.   
+                </p>
+
+                
+                <img class="horizontal_img right_img" src="images/Sub%20topic%20Section.png">     
+                
+                <p>
+                    There are the three Sub-topics which contain an image, title and a thesis statement to pick the interest of the reader. At the end of the thesis statement there is a “Read more” link that would take the user to the extinct animal page where he can read the topic in detail, the color of “Read more” is different than the color of the thesis statement and once the user hover over the link an underline will appear under it to show the user that this is a link which he can click on it. The three subtopics are placed in container div tag and each one of them is placed in a div tag, the div of each one styled to have a round corner and the same background color, since all of them have these properties we placed the style in the container div, round corner done by using border-radius property in CSS file. The subtopics are placed in the center of the webpage and there is a space between them to add a white space in order to attract the user's focus.
+                </p>
+
+                <!--image of the form and fotter Layout-->
+                <img class="horizontal_img left_img" src="images/form%20and%20footer.png">
+                
+                <!--form-->
+                <p>
+                    At the end of the webpage there is a form where the user can register his/her interest to get updated regularly; the form has three input fields which are First name, Last name, and email, and submit button, when the user click on the submit button the message will appear below it to show the entries validation. If the user entered incorrect information then the message will ask him/her to re-enter details, for example if he enter a number rather than characters in first name and last name fields, or if he didn’t add @ in email field or if he leave some or all of them empty a clear message will appear to put him in a picture of what is wrong with his entries, otherwise the succeed message will appear and the user first and last names will appear at the top right corner in all of the remaining pages to show that the user login, The entries validation and the login user information done by using functions and sessionStorage in javascript.
+                    The footer contains the copyright and links to social media platform. When the user hover over the social media icons, the color of them will change to show that those are links.      
+                </p>
+                
+                <!--the start of the subtopic page (video, Details)-->
+                <img class="horizontal_img right_img" src="images/Topic%20Page%20layout.png">
+                
+                <p>
+                    The Sub-topic pages start with an introduction in which it explains the Animal. Then the reader can read the most important details regarding the mentioned animal's. This said important details are when they were discovered, size, habit, diet, etc. There are some related images placed within the text, some of them float to right and some to left, most of them have the same size, and all of them have round corners. The properties of floating, changing the size and making the round corners of them done by styling in the CSS file, we used the float attribute to place the image to right or to left. Also there is a space between the images and the text, this done by using margin properties in the CSS file. 
+                </p>
+
+                <!--The end of the Sub Topic page-->
+                <img class="horizontal_img left_img" src="images/Topic%20Page%20layout%202.png" alt="The end page layout of the Sub-topic">
+                
+                <p>
+                    The page ends with an informational video to entertain the user and feed his curiosity even more. The page ends with an informational video to entertain the user and feed his curiosity even more. The video has round corners and is placed in the center by using text-align property in the CSS file.  
+                </p>
+                
+                <!--the making of page and our story-->      
+                <p>
+                    When designing the Making of EA page we wanted to add as many details as possible while explaining the reasoning in more Details. Lastly, Our Story page contains each group and individual work. It also contains developers' report.
+                </p>
+
+                <!--b. Impact of HTML, CSS, and JS code on maintainability of website-->
+                <p>
+                    Adding all the contents of the website are done by using html and it’s tags, like the logo, the text of navigation bar, the paragraphs, the images, the form. For adding a paragraph we used p tag, for adding images we used img tag, we also used div tag in order to divide the page into parts to ease styling it. Styling all of these contents done by using CSS which stands for cascading style sheet, we placed all the styles in external CSS file to ease of reuse it for the remaining pages of the website if we want them to have the same style, and we placed the user entries validation of form and slide show in external javascript file. The external CSS and javascripts files will reduce the time taken for developing the website, reduce the code, and ease of maintaining, fixing, and updating the code. In the CSS file we arranged the content of html according to our mock-ups, we added the colors of the text by using color property, the background color by using background-color property, the color of header and footer, we changed the size of the text by using font-size property, we changed the size of logo and images by using width and height properties, and many more properties we used in order to style the website.
+                    In General, the reason why we obtain individual files is to store the HTML, CSS and JavaScript is to make it easy for the developers and make them more arrangeable.
+
+                </p>
+                
+            </div>
+            
+            <div id="sidebar2"></div>
+    
+        </div> 
+<!-- code finally end here -->
+        
+        
+        <div id="Footer">
+            <br>
+            <span id="copyright">Copyright @ 2022 Extinct Animals</span>
+            <div id="Social_Media">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </body>
+    
+    
+    <script src="script.js"></script>
+</html>

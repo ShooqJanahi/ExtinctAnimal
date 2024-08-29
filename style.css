@@ -1,0 +1,443 @@
+/*Resolution 1920x1080
+Shooq Janahi 202001753, Nada Alawadhi 202100024, Rabab Abbas 202203500*/
+html 
+    {
+        scroll-padding-top: 160px;
+    }
+* 
+    {
+        box-sizing:border-box
+    }
+body
+    {
+        background-color: #cca88b;
+        margin: 0; 
+        color: #1f1613;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: arial; 
+    }
+
+/*Header*/
+#Header/*header container*/
+    {
+        font-family: Arial;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: #4f382c;
+        width: 100%;
+        height: 140px;
+    }
+    #Header img/*logo style*/
+        {
+            height: 100%;
+            width: ;
+            padding-bottom: 10px;
+            position: relative;
+            left: 20px;
+        }
+    #showname
+        {
+            position:absolute;
+            top:0;
+            right:0;
+            clear: both;
+            
+            color: #cca88b;
+            width: inherit;
+            padding: 14px 40px;
+            font-size: 20px;
+        }
+    .navbar /* navigation bar style*/
+        {
+            position:absolute;
+            bottom:0;
+            right:0;
+        }
+    .navbar a /*navigation hyperlink style*/
+        {
+            float: left;
+            font-size: 25px;
+            color: #cca88b;
+            text-align: center;
+            padding: 14px 40px;
+            text-decoration: none;
+        }
+    .dropdown /*dropdown container div style*/
+        {
+            float: left;
+            overflow: hidden;
+        }
+    .dropdown .dropbtn /*dropdown container + bottun style*/
+        {
+            cursor: pointer;
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: #cca88b;
+            padding: 14px 40px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus /*hover style*/
+        {
+            background-color: #755845;
+        }
+    .dropdown-content /*dropdown content style (sub topics links)*/
+        { 
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 140px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+    .dropdown-content a /*dropdown content (hyperlink) style (sub topics links)*/
+        { 
+            float: none;
+            color: black;
+            padding: 12px 69px 12px 20px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+    .dropdown-content a:hover /*dropdown content (hyperlink:hover) style (sub topics links)*/
+        {
+            background-color: #ddd;
+        }
+    .show /*when clicking dropdown bottun show dropdown menu*/
+        {
+            display: block;
+        }
+
+/* Slideshow*/
+.Slideshow_Container /* Slideshow container style*/
+    {
+        clear:both; 
+        position: relative;
+    }
+    .MySlides /*each picture with its description div style*/
+        {
+            display: none;
+            width:100%;
+            max-height:1000px;
+            margin:auto;
+            position: relative;
+        }
+            .slideshow-img /*slideshow images style*/
+                {
+                    vertical-align: middle;
+                    height: 800px;
+                    width: 100%;
+                }
+            .prev, .next /* Next & previous buttons style*/
+                {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    margin-top: -22px;
+                    padding: 16px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+            .next /* Position the "next button" to the right */
+                {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+            .prev:hover, .next:hover /*Next & previous buttons On hover style*/
+                {
+                    background-color: rgba(0,0,0,0.8);
+                }
+            .content /* Caption text style*/
+                {
+                    position: absolute;
+                    bottom: 0;background: rgb(0, 0, 0); /* Fallback color */
+                    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+                    color: #f1f1f1;
+                    width: 100%;
+                    padding: 20px;
+                }
+            .Number_Text /* Number text (1/6 etc) style*/
+                {
+                        color: #f2f2f2;
+                        font-size: 20px;
+                        padding: 12px 16px;
+                        position: absolute;
+                        top: 0;
+                    }
+            .fade /* Fading animation *//*www.w3schools.com*/
+                {
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+            @keyframes fade /*www.w3schools.com*/
+                {
+                    from {opacity: .4} to {opacity: 1}
+                }
+
+/*slide show dots*/
+#div-dot/* The dots/bullets style */
+    {
+        text-align: center;
+    }
+    .dot 
+        {
+            cursor: pointer;
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+    .active, .dot:hover 
+        {
+            background-color: #717171;
+        }
+
+/*sub topics*/
+#Subs/*sub topics container style*/
+    {
+        min-height: 400px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .Sub_topics/*each sub topic div style*/
+        {
+            background-color:#755845;
+            min-height:520px;
+            width:380px;
+            margin:80px 80px;
+            color: #1f1613;
+            font-size: 24px;
+            line-height: 35px;
+            word-spacing: 2px;
+            border: 5px solid #755845;
+            border-radius: 1em;
+        }
+        .Sub_topics img/*sub topics images style*/
+            {
+                width: 100%;
+                height: 320 ;
+                /*border: 2px solid #755845;*/
+                border-radius: 1em;
+            }
+        p.introduction
+            {
+
+                margin-left: 0.4em;
+                margin-right: 0.4em;
+                text-align: justify;
+                text-justify: inter-word;        
+
+            }
+        .Sub_topics a/*Read more style*/
+            {
+                color: #cca88b;
+                text-decoration: none;
+            }
+        .Sub_topics a:hover/*Read more (on hover) style*/
+            {
+                text-decoration: underline;
+            }
+        p.subs_titles/*sub topics title style*/
+            {
+                font-weight: bold;
+                font-size: 28px;
+                text-align: center;
+                margin: 10px;
+            }
+
+/*Form*/
+#Form_container/*form container style*/
+    {
+        background-image: url(images/img7.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 550px;
+        width: 100%;
+    }
+    #Form/*form style*/
+        {
+            background-color: white;
+            border-radius: 1em;
+            color: #333;
+            line-height: 1.8;
+            width: 360px;;
+            padding: 24px 36px  ;
+        }
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) /*www.w3schools.com*/
+        {
+            #Form 
+                {
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                background-color: rgba(255, 255, 255, 0.5);
+                }
+        }
+        #Form_title
+            {
+                font-size: 30px;
+                margin: 19px 0px;
+            }
+        #Form label
+            {
+                font-size: 25px;
+            }
+        #Form input
+            {
+                font-size: 19px;
+            }
+        #Form_respond
+            {
+                font-size: 22px;
+                color: BB0000; /*9A0000;/*#790001;*//*#5A0004;*/
+            }
+
+/*Footer*/
+#Footer/*footer container style*/
+    {
+        background-color: #4f382c;
+        height: 140px;
+        position: relative;
+        margin-top: auto;
+    }
+    #copyright/* copyrights style*/
+        {
+            position:absolute;
+            bottom:20;
+            left: 20;
+            color: #cca88b;
+            margin: 5px 2px;
+        }
+    #Social_Media/*social media div style*/
+        {
+            position:absolute;
+            bottom:20;
+            right: 20;
+        }
+    .fa /*social media icons style*/
+        {
+            margin: 5px 2px;
+            padding: 10px;
+            font-size: 30px;
+            width: 35px;
+            text-align: center;
+            text-decoration: none;
+            background: #cca88b;
+            color: #4f382c;
+            border-radius: 50%;
+        }
+    .fa:hover /*social media (on hover) icons style*/
+        {
+            opacity: 0.7;
+        }
+
+
+/*--------------------------------Start of the sup topics style----------------------------------------------*/
+
+#outer-container 
+    {
+        display: table;
+        width: 100%;
+        height: 100%;
+        
+        text-align: justify;
+        text-justify: inter-word; 
+        line-height:1.6em;
+        font-size: 2.5em; 
+    }
+
+    #sidebar
+        {
+            display: table-cell;
+            width: 10%;
+            vertical-align: top;
+        }
+
+    #content 
+        {
+            display: table-cell;
+            width: 78%;
+            vertical-align: top;
+            padding: 0px 30px 15px 15px; 
+        }
+        #subtitle
+            { 
+                /*determine the size of the sub topic title in sub topic pages*/
+                font-size: 1.9em;
+                font-weight: bold;
+                padding: 30px 0px;
+                margin: 20px 0px;
+            }
+        .vertical_img/*images in sub page         380x350        */
+            {
+                height: 380px;
+                width: 350px;
+                border: 1px solid;
+                border-radius: 1em;
+            }
+        .horizontal_img/*images in sub page         260x480        */
+            {
+                height: 260px;
+                width: 480px;
+                border:1px solid;
+                border-radius: 0.4em;
+            }
+        .right_img/*images in sub page         float right        */
+            {
+                margin-left: 1em;
+                float: right;
+            }
+        .left_img/*images in sub page         float left        */
+            {
+                margin-right: 1em;
+                float: left;
+            }
+        #video1/*To add space between the bottom of the video and the footer*/
+            { 
+                margin-top: 3em; 
+                margin-bottom: 3em; 
+                text-align: center;
+            }
+            video
+                {
+                    /*determine the size of the video*/
+                    width: 60%;	
+                    /*To make round corner of the video*/
+                    border-radius: 1em;    
+                 }
+
+    #sidebar2
+        {
+            display: table-cell;
+            width: 10%;
+            vertical-align: top;
+        }
+
+/*------------------------------------Start of the Making of EA style-------------------------------------------------*/
+
+.LogoSize/*to change the size of the logo in the making of page*/
+    {
+        height: 240px;
+        width: 210px;
+        border:1px solid;
+    }
+
+
+

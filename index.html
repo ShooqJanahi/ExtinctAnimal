@@ -1,0 +1,180 @@
+<!--Resolution 1920x1080-->
+<!--Shooq Janahi 202001753, Nada Alawadhi 202100024, Rabab Abbas 202203500-->
+<html>
+    <head>
+        <title>Extinct Animals</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- style for social media icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <!--this is the header. all pages have the same header-->
+        <div id="Header">
+            <!--logo-->
+            <img src="images/logo.png" alt="Brontosaurus dinosaur logo">
+            <div id="showname"></div>
+            <!--this is where the Navigation bar start-->
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <!--a drop down menu which contain the subTopic pages-->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="DD_Function()">Extinct Animals</button> <!--the title of the dropdown-->
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="Brachiosaurus.html">Brachiosaurus</a>
+                        <a href="Mammoth.html">Mammoth</a>
+                        <a href="dodo.html">Dodo</a>
+                    </div>
+                </div> 
+                <a href="Making%20Of%20EA.html">Making of EA</a>
+                <a href="Our%20Story.html">Our Story</a>
+            </div>
+        </div> 
+            <!--explaining the website overview though a slideshow-->
+         <div class="Slideshow_Container">
+             <!-- one picture of slide show-->
+             <div class="MySlides fade">
+                <div class="Number_Text">1 / 6</div> <!--each picture is numbered to tell the user the amout of pictures he has left to go thourgh-->
+                <img class="slideshow-img" src="images/Irish_Elk.jpeg" alt="Irish Elk">
+                <div class="content">
+                    <h1>Irish Elk</h1> <!--the name of the animal-->
+                    <p>Possibly most Irish elk specimens known died from winter kill.</p> <!--A thesis statement that puts the main idea of their nature-->
+                </div>
+            </div>
+                <!-- the second picture-->
+            <div class="MySlides fade">
+                <div class="Number_Text">2 / 6</div> <!--each picture is numbered to tell the user the amout of pictures he has left to go thourgh-->
+                <img class="slideshow-img" src="images/Tyrannosaurus.png" alt="Tyrannosaurus">
+                <div class="content">
+                    <h1>Tyrannosaurus</h1> <!--the name of the animal-->
+                    <p>This animal had a mouth full of serrated teeth.</p> <!--A thesis statement that puts the main idea of their nature-->
+                </div>
+            </div>
+             <!--the third picture-->
+            <div class="MySlides fade">
+                <div class="Number_Text">3 / 6</div> <!--each picture is numbered to tell the user the amout of pictures he has left to go thourgh-->
+                <img class="slideshow-img" src="images/Nasutoceratops.jpeg" alt="Nasutoceratops">
+                <div class="content">
+                    <h1>Nasutoceratops</h1>  <!--the name of the animal-->
+                    <p>Due to their heavier built size they lacked fast mobilization</p> <!--A thesis statement that puts the main idea of their nature-->
+                </div>
+            </div>
+            <!--the fourth picture-->
+            <div class="MySlides fade">
+                <div class="Number_Text">4 / 6</div> <!--each picture is numbered to tell the user the amout of pictures he has left to go thourgh-->
+                <img class="slideshow-img" src="images/Great_auk.jpeg" alt="Great auk">
+                <div class="content">
+                    <h1>Great auk</h1> <!--the name of the animal-->
+                    <p>This animal had a thick fat layer which helped protect them from the severely cold conditions where it lived.</p> <!--A thesis statement that puts the main idea of their nature-->
+                </div>
+            </div>
+           <!-- the fifth picture-->
+            <div class="MySlides fade">
+                <div class="Number_Text">5 / 6</div> <!--each picture is numbered to tell the user the amout of pictures he has left to go thourgh-->
+                <img class="slideshow-img" src="images/Western_black_rhinoceros.jpeg" alt="Western black rhinoceros">
+                <div class="content">
+                    <h1>Western black rhinoceros</h1>  <!--the name of the animal-->
+                    <p>The Western black rhino has two large horns, with the front horn being the largest of the two.</p> <!--A thesis statement that puts the main idea of their nature-->
+                </div>
+            </div>
+            <!-- the sixth picture-->
+            <div class="MySlides fade">
+                <div class="Number_Text">6 / 6</div> <!--each picture is numbered to tell the user the amout of pictures he has left to go thourgh-->
+                <img class="slideshow-img" src="images/Troodon.jpeg" alt="Troodon">
+                <div class="content">
+                    <h1>Troodon</h1> <!--the name of the animal-->
+                    <p>This dinosaur is believed to be among the most intelligent dinosaurs.</p> <!--A thesis statement that puts the main idea of their nature-->
+                </div>
+            </div>
+             <!--buttons to be able to move in between picture-->
+             <a class="prev" onclick="plusSlides(-1)">❮</a>
+             <a class="next" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+        
+        <br>
+        <!--dots is another way to tell the user on which picture he's in-->
+        <div id="div-dot">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+        
+        <br>
+        <!--a section dedicated to the three subtopics-->
+        <div id="Subs">
+            <!--each subtopic is wrappped in a div-->
+            <div class="Sub_topics"> <!--Brachiosaurus section-->
+                <img src="images/Brachiosaurus0.jpeg" alt="Brachiosaurus"> <!--an image to give the user a view of how the animal look like-->
+                <p class="subs_titles">Brachiosaurus</p>
+                <!--a brief introduction of the animal-->
+                <p class="introduction">
+                    Brachiosaurus is a genus of herbivorous sauropod and one of the largest dinosaurs to... 
+                    <br><a href="Brachiosaurus.html">Read more</a> <!--a "Read more" in which serve as a link to the topic page-->
+                </p>
+            </div>
+            <!--mammoth section-->
+            <div class="Sub_topics">
+                <img src="images/mammoth0.webp" alt="mammoth"> <!--an image to give the user a view of how the animal look like-->
+                <p class="subs_titles">Mammoth</p>
+                <!--a brief introduction of the animal-->
+                <p class="introduction">
+                    A mammoth is any species of the extinct elephantid genus Mammuthus, one of...
+                    <br><a href="Mammoth.html">Read more</a> <!--a "Read more" in which serve as a link to the topic page-->
+                </p>
+            </div>
+            <!--Dodo Section-->
+            <div class="Sub_topics">
+                <img src="images/dodo0.jpeg" alt="dodo bird"> <!--an image to give the user a view of how the animal look like-->
+                <p class="subs_titles">Dodo</p>
+                <!--a brief introduction of the animal-->
+                <p class="introduction">
+                    The dodo (Raphus cucullatus) is an extinct flightless bird that was endemic to...
+                    <br><a href="dodo.html">Read more</a> <!--a "Read more" in which serve as a link to the topic page-->
+                </p>
+            </div>
+            
+        </div>
+        
+            <!--the register your interest form. so the user could receive update on his email-->    
+        <div id="Form_container">
+            <div id="Form">
+                <p id="Form_title">Register your interest</ p> <!--the title of the form-->
+                <form>
+                    <label for="fname">First name:</label><br> <!--asking for the users first name-->
+                    <input type="text" id="fname" name="fname"><br> <!--a text box for the user to enter his first name-->
+                    <label for="lname">Last name:</label><br> <!--asking for the users last name-->
+                    <input type="text" id="lname" name="lname"><br> <!--a text box for the user to enter his last name-->
+                    <label for="email">E-mail:</label><br> <!--asking for the users email-->
+                    <input type="text" id="email" name="email"><br><br> <!--a text box for the user to enter his email-->
+                    <input type="button" value="Submit" onclick="InterestForm()"> <!--a sumit buttom so the entered data ca be saved-->
+                </form>
+                <div id="Form_respond"></div> <!--once the user submit his respond the form output an error or successful message-->
+            </div>
+        </div>
+        
+        <!--this is a footer. all pages have the same footer-->
+        <div id="Footer">
+            <br>
+            <span id="copyright">Copyright © 2022 Extinct Animals</span> <!--a copy right message. in which grant us the creators the right to protect our work from theft-->
+            <!--links to the social media platform-->
+            <div id="Social_Media">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        
+    </body>
+    
+    
+    
+    
+    
+    <!--a javascript link-->
+    <script src="script.js"></script>
+
+</html>
