@@ -441,3 +441,91 @@ body
 
 
 
+    /*---------------------- Responsive --------------------------------------*/
+    /* Responsive Design */
+
+@media (max-width: 1200px) {
+    /* General adjustments for medium screens (laptops, tablets in landscape) */
+    .Sub_topics {
+        width: 300px;
+        margin: 40px;
+    }
+    .navbar a, .dropdown .dropbtn {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    #Header {
+        height: 100px;
+    }
+    #Header img {
+        height: 80px;
+    }
+    .slideshow-img {
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for tablets in portrait and smaller laptops */
+    #Header, #Footer {
+        height: 80px;
+    }
+    #Header img {
+        height: 60px;
+    }
+    .navbar a, .dropdown .dropbtn {
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+    .Sub_topics {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .slideshow-img {
+        height: 400px;
+    }
+    #Form {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile adjustments */
+    .navbar {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar a, .dropdown .dropbtn {
+        padding: 10px;
+        font-size: 16px;
+    }
+    #Header, #Footer {
+        height: 60px;
+    }
+    #Header img {
+        height: 40px;
+    }
+    .Sub_topics {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .slideshow-img {
+        height: 300px;
+    }
+    .content {
+        font-size: 16px;
+    }
+    .fa {
+        font-size: 24px;
+    }
+    #Form {
+        width: 90%;
+        padding: 15px;
+    }
+    #Form label, #Form_title {
+        font-size: 18px;
+    }
+}
